@@ -64,6 +64,8 @@ print "User's name is #{string}"
 
 #command İkinci dereceden bir bilinmeyenli denklemin köklerini hesaplayan program
 
+=begin
+
 a=1.0
 b=5.0
 c=1.0
@@ -77,4 +79,36 @@ if (delta >= 0.0)
     
 else
     puts "Kök yok."
+end
+
+=end
+
+=begin
+
+print 'Enter a number: '
+string = gets.chomp
+
+if string == ''
+    puts 'Nothing entered'
+elsif (number = Integer(string, exception: false))
+    puts "Your number: #{number}"
+else
+    puts "Error"
+end
+
+=end
+
+def getnum
+    print 'Enter a number : '
+
+    while !(string = gets.chomp).empty?
+        number = Integer(string, exception: false)
+        if number
+            return number
+        end
+
+        print "You entered an invalid number: '#{string}'. Please try again : "
+    end
+
+    nill
 end
