@@ -21,6 +21,8 @@ def numberguess
     puts "#{tries} Try(s) left."
     next unless guess == number || tries.zero?
 
+    puts "The number you had to guess was #{number}. Better luck next time!"
+
     break
   end
 end
