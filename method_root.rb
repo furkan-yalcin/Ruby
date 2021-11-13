@@ -40,4 +40,4 @@ ccc = 1
 
 root_calculator(aaa, bbb, ccc)
 
-root_calculator(1.0, 5.0, 1.0)
+root_calculator(1.0, 5.0, 1.0)    # Bu şekilde direkt değerler girilerek de çalıştırılabilir ama a, b ve c değerlerinin yerlerine dikkat edilmeli.
