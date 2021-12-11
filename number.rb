@@ -3,7 +3,7 @@
 print 'Please enter a number : '
 string = gets.chomp
 
-if string == ''
+if string.empty?
 
   puts "You didn't enter anything."
 

@@ -9,9 +9,8 @@ def numberguess
 
     next unless guess == number
 
-    break
+    return 'Congratulations!'
   end
-  puts 'Congratulations!'
 end
 
 puts numberguess

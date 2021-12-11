@@ -5,7 +5,7 @@ def numberguess
 
   print 'Your guess : '
   guess = gets.chomp.to_i
-
+  puts 'You entered invalid number.' if (guess = Integer(guess, exception: false))
   if guess == number
 
     puts 'Congratulations!'
